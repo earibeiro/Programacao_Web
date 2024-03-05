@@ -1,0 +1,176 @@
+@import url(variable.css);
+
+/* Index */
+
+*, *::before, *::after {
+    padding: 3;
+    margin: 3;
+}
+
+.site-header, .site-footer {
+    background-color: rgb(113, 227, 255);
+    color: white;
+    padding: 5px;
+}
+
+.main-navigation {
+    font-weight: bold;
+    
+}
+
+.main-navigation ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-family: var(--font-family);
+}
+
+.main-navigation a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-navigation li{
+    padding: 10px 15px;
+    border-color: azure;
+}
+
+.main-navigation a:hover{
+
+    background-color:white;
+    color: black;
+}
+
+.section {
+    padding: 50px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.container {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    margin-left: auto; /*Isso aqui deu a margem esquerda pra ajudar a centralizar*/
+    margin-right: auto; /* Isso aqui deu a margem direita para também ajudar a centralizar */
+    padding: 5px;
+}
+
+.container h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.container img{
+    float:left;
+    margin-right: 300px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+h2, footer {
+    text-align: center;
+    font-family: var(--font-family);
+  }
+
+.container p {
+    text-align: justify;
+    font-size: 20px;
+    font-family: var(--font-family);
+}
+
+.container img{
+    animation: fadeIn 2s ease-in-out;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.desenvolvidos h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.grid {
+    /*Add shadows to create the "card" effect */
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2);
+    transition: var(--transition-speed);
+    border-radius: 5px;
+    padding: 10px 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+}
+
+.card img{
+    width: 46%;
+    height: 200px;
+    object-fit: contain;
+    border-bottom: 3px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    padding: 2px 16px;
+}
+
+.card h4, p{
+    text-align: center;
+}
+
+.project-info{
+    padding: 10px;
+}
+
+.footer-navigation ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer-navigation li{
+    padding: 10px 15px;
+    border-color: azure;
+}
+
+
+@media screen and (max-width: 768px){
+    .main-navigation ul{
+        flex-direction: column;
+    }
+    .main-navigation li{
+        margin-bottom: 10px;
+        font-size: large;
+    }
+    .profile-pic{
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+/* projeto1 */
+
+.catphotoapp img{
+    width: 60%;
+    height: 60%;
+    
+}
