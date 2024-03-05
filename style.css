@@ -2,6 +2,10 @@
 
 /* Index */
 
+html{
+    scroll-behavior: smooth;
+}
+
 *, *::before, *::after {
     padding: 3;
     margin: 3;
@@ -90,7 +94,20 @@ h2, footer {
     display: table;
 }
 
-.desenvolvidos h1{
+
+.experience h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.experience-info h4{
+    font-size: 30px;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.developed h1{
     font-size: 50px;
     text-align: center;
     font-family: var(--font-family);
