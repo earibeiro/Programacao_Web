@@ -7,8 +7,13 @@ html{
 }
 
 *, *::before, *::after {
-    padding: 3;
-    margin: 3;
+    padding: 0;
+    margin: 0;
+}
+
+.site-header{
+    position: fixed;
+    width: 100%;
 }
 
 .site-header, .site-footer {
@@ -19,7 +24,7 @@ html{
 
 .main-navigation {
     font-weight: bold;
-    
+    width: 100%;
 }
 
 .main-navigation ul{
@@ -43,6 +48,27 @@ html{
 
     background-color:white;
     color: black;
+}
+
+.about_me{
+    padding: 50px 0;
+}
+
+.about_me h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: var(--font-family);
+    padding: 20px;
+}
+
+hr{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-top: 3px solid rgb(113, 227, 255);
+}
+
+.experience-info {
+    padding: 25px 0;
 }
 
 .section {
@@ -184,10 +210,4 @@ h2, footer {
 }
 
 
-/* projeto1 */
 
-.catphotoapp img{
-    width: 60%;
-    height: 60%;
-    
-}
