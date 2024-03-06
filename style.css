@@ -67,8 +67,35 @@ hr{
     border-top: 3px solid rgb(113, 227, 255);
 }
 
+.experience h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: var(--font-family);
+    padding: 20px 0;
+}
+
 .experience-info {
     padding: 25px 0;
+}
+
+.experience-info h3{
+    font-size: 30px;
+    text-align: center;
+    font-family: var(--font-family);
+    padding: 3px 0;
+}
+
+.experience-info h4{
+    font-size: 15px;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: normal;
+    padding: 0 0 10px;
+}
+
+.experience-info p{
+    padding: 3px 0;
+    font-family: var(--font-family);
 }
 
 .section {
@@ -118,19 +145,6 @@ h2, footer {
     content: "";
     clear: both;
     display: table;
-}
-
-
-.experience h1{
-    font-size: 50px;
-    text-align: center;
-    font-family: var(--font-family);
-}
-
-.experience-info h4{
-    font-size: 30px;
-    text-align: center;
-    font-family: var(--font-family);
 }
 
 .developed h1{
