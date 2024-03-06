@@ -67,6 +67,50 @@ hr{
     border-top: 3px solid rgb(113, 227, 255);
 }
 
+.section {
+    padding: 50px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.container {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    margin-left: auto; /*Isso aqui deu a margem esquerda pra ajudar a centralizar*/
+    margin-right: auto; /* Isso aqui deu a margem direita para também ajudar a centralizar */
+    padding: 5px;
+}
+
+.container h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.container img{
+    float:left;
+    margin-right: 300px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.container p {
+    text-align: justify;
+    font-size: 20px;
+    font-family: var(--font-family);
+}
+
+.container img{
+    animation: fadeIn 2s ease-in-out;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .experience h1{
     font-size: 50px;
     text-align: center;
@@ -98,59 +142,14 @@ hr{
     font-family: var(--font-family);
 }
 
-.section {
-    padding: 50px 0;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.container {
-    width: 80%;
-    background-color: rgb(255, 255, 255);
-    color:black;
-    margin-left: auto; /*Isso aqui deu a margem esquerda pra ajudar a centralizar*/
-    margin-right: auto; /* Isso aqui deu a margem direita para também ajudar a centralizar */
-    padding: 5px;
-}
-
-.container h1{
-    font-size: 50px;
-    text-align: center;
-    font-family: var(--font-family);
-}
-
-.container img{
-    float:left;
-    margin-right: 300px;
-    width: 250px;
-    height: 250px;
-    border-radius: 20px;
-}
-
-h2, footer {
-    text-align: center;
-    font-family: var(--font-family);
-  }
-
-.container p {
-    text-align: justify;
-    font-size: 20px;
-    font-family: var(--font-family);
-}
-
-.container img{
-    animation: fadeIn 2s ease-in-out;
-}
-
-.clearfix::after{
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .developed h1{
     font-size: 50px;
     text-align: center;
     font-family: var(--font-family);
+}
+
+.project-info{
+    padding: 10px;
 }
 
 .grid {
@@ -187,8 +186,9 @@ h2, footer {
     text-align: center;
 }
 
-.project-info{
-    padding: 10px;
+footer {
+    text-align: center;
+    font-family: var(--font-family);
 }
 
 .footer-navigation ul{
@@ -198,7 +198,7 @@ h2, footer {
 }
 
 .footer-navigation li{
-    padding: 10px 15px;
+    padding: 20px 10px 15px;
     border-color: azure;
 }
 
