@@ -45,7 +45,6 @@ html{
 }
 
 .main-navigation a:hover{
-
     background-color:white;
     color: black;
 }
@@ -60,6 +59,45 @@ html{
     font-family: var(--font-family);
     padding: 20px;
 }
+
+.skills h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: var(--font-family);
+    padding: 20px;
+}
+
+.skills-grid{
+    /*Add shadows to create the "card" effect */
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2);
+    transition: var(--transition-speed);
+    border-radius: 5px;
+    padding: 10px 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.skills-card h4{
+    text-align: center;
+    font-family: var(--font-family);
+}
+.skills-card img{
+    width: 30%;
+    height: 100px;
+    object-fit: contain;
+    border-bottom: 3px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.skills-card img:hover{
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
 
 hr{
     margin-top: 50px;
