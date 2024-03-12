@@ -241,16 +241,34 @@ footer {
 }
 
 
-@media screen and (max-width: 768px){
-    .main-navigation ul{
-        flex-direction: column;
+@media screen and (max-width: 768px) {
+    .main-navigation {
+        position: fixed;
+        top: -300px; /* initially hide the navigation off-screen */
+        left: 0;
+        width: 100%;
+        background-color: rgb(113, 227, 255);
+        z-index: 1;
+        transition: top 0.3s ease; /* add smooth transition for top position */
     }
-    .main-navigation li{
+
+    .main-navigation:hover {
+        top: 0; /* show the navigation when hovered */
+    }
+
+    .main-navigation ul {
+        flex-direction: column;
+        font-size: large;
+        padding: 0; /* remove default padding */
+    }
+
+    .main-navigation li {
         margin-bottom: 10px;
         font-size: large;
+        list-style: none; /* remove default list styles */
     }
-    .profile-pic{
-        float: none;
+
+    .profile-pic {
         display: block;
         margin: 0 auto;
     }
