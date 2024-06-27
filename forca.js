@@ -12,7 +12,7 @@ init();
 
 function init() {
     indexImg = 1;
-    img.src = `/img/imgforca/img${1}.png`;
+    img.src = `img/imgforca/img${1}.png`;
 
     generateGuessSection();
     generateButtons();
@@ -39,7 +39,7 @@ function generateGuessSection() {
 
 function wrongAnswer() {
     indexImg++;
-    img.src = `/img/imgforca/img${indexImg}.png`;
+    img.src = `img/imgforca/img${indexImg}.png`;
     //console.log(imagePath);
     //img.src = imagePath;
 
