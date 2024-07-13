@@ -21,7 +21,9 @@
                 <li><a href="#developed">Projetos</a></li>
                 <li><a href="#site-footer">Contatos</a></li>
                 <li><a onclick="changeTheme()">Alterar Tema</a></li>
+                <a onclick="mainNavMenu()"><i class="fi fi-rr-menu-burger"></i></a>
             </ul>
+            
         </nav>
     </header>
             <main class="container">
@@ -137,19 +139,19 @@
             <ul>
                 <li>
                     LinkedIn: <span class="link" id="linkedin-link">https://www.linkedin.com/in/eduardo-albuquerque-ribeiro-14995917b/</span>
-                    <button onclick="copyToClipboard('linkedin-link')">Copiar</button>
+                    <button data-type="linkedin" onclick="copyToClipboard('linkedin-link')">Copiar</button>
                 </li>
                 <li>
                     GitHub: <span class="link" id="github-link">https://github.com/earibeiro</span>
-                    <button onclick="copyToClipboard('github-link')">Copiar</button>
+                    <button data-type="github" onclick="copyToClipboard('github-link')">Copiar</button>
                 </li>
                 <li>
                     WhatsApp: <span class="link" id="whatsapp-link">5544991037473</span>
-                    <button onclick="copyToClipboard('whatsapp-link')">Copiar</button>
+                    <button data-type="telefone" onclick="copyToClipboard('whatsapp-link')">Copiar</button>
                 </li>
                 <li>
                     Email: <span class="link" id="email-link">eduardoribeiro.advg@gmail.com</span>
-                    <button onclick="copyToClipboard('email-link')">Copiar</button>
+                    <button data-type="email" onclick="copyToClipboard('email-link')">Copiar</button>
                 </li>
             </ul>
         </div>

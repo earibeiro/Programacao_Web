@@ -284,26 +284,31 @@ footer {
     padding: 20px 10px 15px;
 }
 
+.fi-rr-menu-burger{
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
     .main-navigation {
         position: fixed;
-        top: -300px; /* initially hide the navigation off-screen */
+        top: -350px; /* initially hide the navigation off-screen */
         left: 0;
         width: 100%;
-        background-color: rgb(113, 227, 255);
+        background-color: var(--secondary-background-color);
         z-index: 1;
         transition: top 0.3s ease; /* add smooth transition for top position */
     }
 
-    .main-navigation:hover {
-        top: 0; /* show the navigation when hovered */
+    .main-navigation.active{
+        top: 0;
     }
 
     .main-navigation ul {
         flex-direction: column;
         font-size: large;
         padding: 0; /* remove default padding */
+        align-items: center;
+        justify-content: center;
     }
 
     .main-navigation li {
@@ -315,6 +320,12 @@ footer {
     .profile-pic {
         display: block;
         margin: 0 auto;
+    }
+
+    .fi-rr-menu-burger{
+        display: block;
+        font-size: 30px;
+        width: 30px;
     }
 }
 

@@ -45,3 +45,8 @@ function copyToClipboard(elementId) {
     document.body.removeChild(tempInput);
     alert("Link copiado: " + link);
 }
+
+function mainNavMenu(){
+    var navBar = document.querySelector(".main-navigation");
+    navBar.classList.toggle("active");
+}
