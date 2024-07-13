@@ -257,8 +257,8 @@ footer {
 }
 
 .copy-button {
-    background-color: none;
-    color: black;
+    background-color: var(--background-copy-color);
+    color: var(--font-color);
     border: none;
     padding: 10px 20px;
     margin: 10px;
