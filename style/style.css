@@ -6,6 +6,14 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     color: transparent;
@@ -16,7 +24,7 @@ a {
 }
 
 i {
-    color: black;
+    color: var(--font-color);
     font-size: 30px;
 }
 
@@ -28,17 +36,14 @@ i {
 .site-header{
     position: fixed;
     width: 100%;
-}
-
-.site-header, .site-footer {
-    background-color: rgb(113, 227, 255);
-    color: white;
-    padding: 5px;
+    background-color: var(--header-background-color);
+    color: var(--font-color);
 }
 
 .main-navigation {
     font-weight: bold;
     width: 100%;
+    color: var(--font-color);
 }
 
 .main-navigation ul{
@@ -46,10 +51,11 @@ i {
     justify-content: center;
     list-style-type: none;
     font-family: var(--font-family);
+    background-color: var(--secondary-background-color);
 }
 
 .main-navigation a{
-    color: white;
+    color: var(--font-color);
     text-decoration: none;
 }
 
@@ -59,12 +65,14 @@ i {
 }
 
 .main-navigation a:hover{
-    background-color:white;
-    color: black;
+    color: var(--font-color-hover);
 }
 
 .about_me{
     padding: 50px 0;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    border: none;
 }
 
 .about_me h1{
@@ -87,7 +95,7 @@ i {
     border-radius: 5px;
     padding: 10px 10px;
     display: grid;
-    gap: 20px;
+    gap: 1px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -96,7 +104,7 @@ i {
     font-family: var(--font-family);
 }
 .skills-card img{
-    width: 30%;
+    width: 15%;
     height: 100px;
     object-fit: contain;
     border-bottom: 3px solid black;
@@ -115,7 +123,7 @@ i {
 hr{
     margin-top: 50px;
     margin-bottom: 10px;
-    border-top: 3px solid rgb(113, 227, 255);
+    border-top: 3px solid #f5f5f7;
 }
 
 .section {
@@ -125,8 +133,7 @@ hr{
 
 .container {
     width: 80%;
-    background-color: rgb(255, 255, 255);
-    color:black;
+    background-color: var(--background-color);
     margin-left: auto; /*Isso aqui deu a margem esquerda pra ajudar a centralizar*/
     margin-right: auto; /* Isso aqui deu a margem direita para também ajudar a centralizar */
     padding: 5px;
@@ -239,7 +246,8 @@ hr{
 
 footer {
     text-align: center;
-    font-family: var(--font-family);
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
 }
 
 .copy-button-container {
@@ -274,7 +282,6 @@ footer {
 
 .footer-navigation li{
     padding: 20px 10px 15px;
-    border-color: azure;
 }
 
 
@@ -316,5 +323,44 @@ footer {
     to{opacity: 1;}
 }
 
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+.modal-content {
+    background-color: var(--background-color);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px; /* Maximum width */
+    border-radius: 10px; /* Rounded corners */
+}
 
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link {
+    font-weight: bold;
+}

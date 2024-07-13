@@ -10,7 +10,7 @@
     <meta name="description" content="Eduardo's Portfolio">
 </head>
 
-<body>
+<body data-tema="light">
     <header class="site-header">
         <nav class="main-navigation">
             <ul>
@@ -20,12 +20,12 @@
                 <li><a href="#experience">Experiências</a></li>
                 <li><a href="#developed">Projetos</a></li>
                 <li><a href="#site-footer">Contatos</a></li>
+                <li><a onclick="changeTheme()">Alterar Tema</a></li>
             </ul>
         </nav>
     </header>
-            <div class="about_me">
             <main class="container">
-                <section id="about_me">
+                <section id="about_me" class="about_me">
                 <h1>Sobre mim</h1>
                 <img src="img/edu.jpg" alt="Um Eduardo sorrindo"/>
                 <p>Olá, Me chamo Eduardo, e aos 30 anos de idade, decidi entrar no mundo da engenharia de software! Sempre em busca de novos desafios na área de TI , Eu iniciei minha carreira na área do direito, onde passei sete anos aprimorando minhas habilidades na área de comunicação, análise, e resolução de problemas. Ao longo do meu caminho, também me aventurei na docência lecionando inglês, o que me auxiliou ainda mais a polir minha habilidade de me conectar com pessoas e compartilhar conhecimento.
@@ -36,10 +36,8 @@
                 </p>
                 </section>
             </main>
-            </div>
             <hr class="solid">
-            <div class="skills">
-                <section id="skills">
+                <section id="skills" class="skills">
                 <h1>Habilidades</h1>
                     <div class="skills-grid">
                         <article class="skills-card">
@@ -71,11 +69,8 @@
                             <h4><b>Git</b></h4>
                         </article>
                     </div>
-
-            </div>
             <hr class="solid">
-            <section id="experience">
-            <div class="experience">
+            <section id="experience" class="experience">
                 <h1>Experiências</h1>
                     <div class="experience-info">
                         <h3><b>PROFESSOR PARTICULAR DE INGLÊS</b></h3>
@@ -93,11 +88,9 @@
                         <h4>(2013- PRESENTE)</h4>
                         <p>Trabalhei como advogado em um escritório, tendo trabalhado ao longo desse tempo nas áreas: criminal, consumerista e cível.</p>
                     </div>
-            </div>
             </section>
             <hr class="solid">
-            <section id="developed">
-            <div class="developed">
+            <section id="developed" class="developed">
                 <h1>Projetos desenvolvidos</h1>
                     <div class="grid">
                         <article class="card">
@@ -122,12 +115,8 @@
                             </div>
                         </article>
                     </div>
-            </div>
             </section>
-            </div>
-
     <footer class="site-footer">
-        <section id="site-footer">
             <h3>Aqui você pode encontrar meu contato e minhas mídias sociais:</h3>
             <nav class="footer-navigation">
             <ul>
@@ -136,13 +125,35 @@
                 <li><a target="_blank" href="https://wa.me/5544991037473"><i class="fi fi-brands-whatsapp"></i></a></li>
                 <li><a target="_blank" href= "mailto: eduardoribeiro.advg@gmail.com"><i class="fi fi-rr-envelope"></i></a></li>
                 <div class="copy-button-container">
-                    <button class="copy-button" onclick="copyToClipboard()">Contatos</button>
-                    <input type="text" id="contact-url" value="5544991037473" readonly>
-                    <input type="text" id="contact-url" value="eduardoribeiro.advg@gmail.com" readonly>
+                    <button class="copy-button" onclick="clickCard()">Contatos</button>
                 </div>
             </ul>
             </nav>
     </footer>
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contatos</h2>
+            <ul>
+                <li>
+                    LinkedIn: <span class="link" id="linkedin-link">https://www.linkedin.com/in/eduardo-albuquerque-ribeiro-14995917b/</span>
+                    <button onclick="copyToClipboard('linkedin-link')">Copiar</button>
+                </li>
+                <li>
+                    GitHub: <span class="link" id="github-link">https://github.com/earibeiro</span>
+                    <button onclick="copyToClipboard('github-link')">Copiar</button>
+                </li>
+                <li>
+                    WhatsApp: <span class="link" id="whatsapp-link">5544991037473</span>
+                    <button onclick="copyToClipboard('whatsapp-link')">Copiar</button>
+                </li>
+                <li>
+                    Email: <span class="link" id="email-link">eduardoribeiro.advg@gmail.com</span>
+                    <button onclick="copyToClipboard('email-link')">Copiar</button>
+                </li>
+            </ul>
+        </div>
+    </div>
     <script src="script/script.js"></script>            
 </body>
 </html>
