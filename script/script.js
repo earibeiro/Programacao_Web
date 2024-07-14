@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     verifyTheme();
-    
+    fetchGitHubRepos();
 })
 
 function verifyTheme(){
@@ -50,3 +50,36 @@ function mainNavMenu(){
     var navBar = document.querySelector(".main-navigation");
     navBar.classList.toggle("active");
 }
+
+async function fetchGitHubRepos(){
+    try{
+        const response = await fetch('https://api.github.com/users/earibeiro/repos');
+        const data = await response.json();
+        const reposContainer = document.getElementById('repos-container');
+
+        data.forEach(repo => {
+            const repoCard = document.createElement('div');
+            repoCard.className = 'repo-card';
+
+            const repoName = document.createElement('h2');
+            repoName.textContent = repo.name;
+            repoCard.appendChild(repoName);
+
+            const repoDescription = document.createElement('p');
+            repoDescription.textContent = repo.repoDescription || 'Sem descrição';
+            repoCard.appendChild(repoDescription);
+
+            const repoLink = document.createElement('a');
+            repoLink.href = repo.html_url;
+            repoLink.target = '_blank';
+            repoLink.textContent = 'Ver no GitHub';
+            repoCard.appendChild(repoLink);
+
+            reposContainer.appendChild(repoCard);
+        });
+    } catch(error) {
+        console.error('Erro ao buscar repositórios no GitHub', error);
+    }
+}
+
+
