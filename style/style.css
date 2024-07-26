@@ -40,6 +40,10 @@ i {
     color: var(--font-color);
 }
 
+main{
+    min-height: 87vh;
+}
+
 .main-navigation {
     font-weight: bold;
     width: 100%;
@@ -349,7 +353,7 @@ footer {
 @media screen and (max-width: 768px) {
     .main-navigation {
         position: fixed;
-        top: -350px; /* initially hide the navigation off-screen */
+        top: -397px; /* initially hide the navigation off-screen */
         left: 0;
         width: 100%;
         background-color: var(--secondary-background-color);

@@ -1,0 +1,54 @@
+@import url(variable.css);
+
+.tools-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    padding-top: 200px;
+}
+
+.tools-grid tools-card{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tools-grid h4{
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+@media screen and (max-width: 768px) {
+    .tools-grid{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px 10px;
+        padding-top: 25%;
+    }
+}

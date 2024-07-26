@@ -2,7 +2,7 @@ import getWord from "./words.js";
 
 const contentBtns = document.querySelector(".btns");
 const contentGuessWord = document.querySelector(".guess-word");
-const img = document.querySelector("#gameImage"); //acho que o meu é /img, mas fica esperto aí!
+const img = document.querySelector("#gameImage"); 
 const contentClue = document.querySelector(".clue");
 const btnNew = document.querySelector(".new");
 btnNew.onclick = () => init();
@@ -87,4 +87,12 @@ function generateButtons() {
 
         contentBtns.appendChild(btn);
     }
+}
+
+function startGame() {
+    indexImg = 1;
+    img.src = `img/imgforca/img${1}.png`;
+
+    generateGuessSection();
+    generateButtons();
 }

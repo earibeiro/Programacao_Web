@@ -1,0 +1,93 @@
+<!DOCTYPE>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>DEV-TOOLS</title>
+        <link href="style/style.css" rel="stylesheet">
+        <link href="style/devtools.css" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Eduardo's DEV-TOOLS">
+    </head>
+    <body data-tema="light">
+        <header class="site-header">
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="https://earibeiro.github.io/Programacao_Web/">Início</a></li>
+                    <li><a href="#about_me">Sobre mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#experience">Experiências</a></li>
+                    <li><a href="#github-repos">Projetos</a></li>
+                    <li><a href="#site-footer">Contatos</a></li>
+                    <li><a href="">Dev-Tools</a></li>
+                    <li><a onclick="changeTheme()">Alterar Tema</a></li>
+                    <a onclick="mainNavMenu()"><i class="fi fi-rr-menu-burger"></i></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+                <section id="tools" class="tools">
+                <h1>Habilidades</h1>
+                    <div class="tools-grid">
+                        <article class="tools-card">
+                            <img src="img/imgforca/img8.png" alt="uma imagem do jogo de forca"/>
+                            <h4><b><a target="_blank" href="forca.html">FORCA</a></b></h4>
+                        </article>
+                        <article class="tools-card">
+                            <img src="img/css-3.png" alt="CSS logo"/>
+                            <h4><b>CSS</b></h4>
+                        </article>
+                        <article class="tools-card">
+                            <img src="img/js.png" alt="JavaScript logo"/>
+                            <h4><b>JavaScript</b></h4>
+                        </article>
+                        <article class="tools-card">
+                            <img src="img/python.png" alt="Python logo"/>
+                            <h4><b>Python</b></h4>
+                        </article>
+                        
+                    </div>
+                </section>
+        </main>
+    <footer class="site-footer">
+            <h3>Aqui você pode encontrar meu contato e minhas mídias sociais:</h3>
+            <nav class="footer-navigation">
+            <ul>
+                <li><a target="_blank" href="https://www.linkedin.com/in/eduardo-albuquerque-ribeiro-14995917b/"><i class="fi fi-brands-linkedin"></i></a></li>
+                <li><a target="_blank" href="https://github.com/earibeiro"><i class="fi fi-brands-github"></i></a></li>
+                <li><a target="_blank" href="https://wa.me/5544991037473"><i class="fi fi-brands-whatsapp"></i></a></li>
+                <li><a target="_blank" href= "mailto: eduardoribeiro.advg@gmail.com"><i class="fi fi-rr-envelope"></i></a></li>
+                <div class="copy-button-container">
+                    <button class="copy-button" onclick="clickCard()">Contatos</button>
+                </div>
+            </ul>
+            </nav>
+    </footer>
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contatos</h2>
+            <ul>
+                <li>
+                    LinkedIn: <span class="link" id="linkedin-link">https://www.linkedin.com/in/eduardo-albuquerque-ribeiro-14995917b/</span>
+                    <button data-type="linkedin" onclick="copyToClipboard('linkedin-link')">Copiar</button>
+                </li>
+                <li>
+                    GitHub: <span class="link" id="github-link">https://github.com/earibeiro</span>
+                    <button data-type="github" onclick="copyToClipboard('github-link')">Copiar</button>
+                </li>
+                <li>
+                    WhatsApp: <span class="link" id="whatsapp-link">5544991037473</span>
+                    <button data-type="telefone" onclick="copyToClipboard('whatsapp-link')">Copiar</button>
+                </li>
+                <li>
+                    Email: <span class="link" id="email-link">eduardoribeiro.advg@gmail.com</span>
+                    <button data-type="email" onclick="copyToClipboard('email-link')">Copiar</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script/script.js"></script>        
+    </body>
+</html>
