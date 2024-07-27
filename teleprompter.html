@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Teleprompter</title>
+    <link rel="stylesheet" href="style/teleprompter.css" >
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Teleprompter">
+</head>
+<header>
+    <div class="header">
+        <span onclick="scrollDown();">
+            <i class="fa fa-play"></i>
+        </span>
+        <span onclick="flip();">
+            <i class="fa-solid fa-rotate-right"></i>
+        </span>
+    </div>
+</header>
+<body>
+    <div class="content">
+        <p contentEditable="true">
+
+            Olá, você pode editar esta área e escrever o seu texto aqui.
+            Para começar a rolar o texto, clique no botão de play no canto superior esquerdo.
+            Para inverter a direção da rolagem, clique no botão de flip no canto superior direito.
+            
+        </p>
+    </div>
+</body>
+    <script src="script/teleprompter.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</html>

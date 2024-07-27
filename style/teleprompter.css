@@ -1,0 +1,38 @@
+@import url(variable.css);
+
+body {
+    background: black;
+    color: yellow;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.header {
+    height: 60px;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    border-bottom: 1px solid #ffffff;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+.content p {
+    font-size: 3.4em;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 30px;
+}
+
+.content.flip {
+    transform: rotateX(180deg);
+}
