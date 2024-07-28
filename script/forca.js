@@ -1,5 +1,9 @@
 import getWord from "./words.js";
 
+document.addEventListener('DOMContentLoaded', () => {
+    startGame();
+});
+
 const contentBtns = document.querySelector(".btns");
 const contentGuessWord = document.querySelector(".guess-word");
 const img = document.querySelector("#gameImage"); 

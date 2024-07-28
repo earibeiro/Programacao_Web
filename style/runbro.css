@@ -14,13 +14,14 @@
     background: linear-gradient(#87ceeb, #e0f6ff);
 }
 
+
 /* CSS relativo ao pipe e sua animação */
 
- .pipe{
+.pipe{
     position: absolute;
     bottom: 0;
     width: 70px;
-    animation: movePipe 1.4s linear infinite;
+    animation: movePipe 1.3s linear infinite;
 }
 
 @keyframes movePipe{
@@ -68,7 +69,7 @@
     position: absolute;
     top: 0;
     width: 350px;
-    animation: moveClouds 20s linear infinite;
+    animation: moveClouds 16s linear infinite;
 }
 
 @keyframes moveClouds{
@@ -78,4 +79,19 @@
     to{
         right: 100%;
     }
+}
+
+/* CSS relativo ao uso no mobile */
+
+@media screen and (max-width: 768px) {
+    .game-board {
+        width: 100%;
+        height: 500px;
+    }
+
+    .pipe {
+        width: 50px;
+        animation: movePipe 1s linear infinite;
+    }
+    
 }
