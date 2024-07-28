@@ -32,5 +32,7 @@ const loop = setInterval(() => {
 },10); //A cada 10ms ele verifica se o personagem morreu.
 
 document.addEventListener('keydown', jump);
+document.addEventListener('click', jump);
+document.addEventListener('touchstart', jump);
 
 
