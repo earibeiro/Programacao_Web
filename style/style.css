@@ -73,7 +73,7 @@ main{
 }
 
 .about_me{
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     background-color: var(--background-color);
     color: var(--font-color);
     border: none;
@@ -150,9 +150,9 @@ hr{
 
 .container img{
     float:left;
-    margin-right: 300px;
-    width: 250px;
-    height: 250px;
+    margin-right: 200px;
+    width: 320px;
+    height: 350px;
     border-radius: 20px;
 }
 
@@ -160,6 +160,7 @@ hr{
     text-align: justify;
     font-size: 20px;
     font-family: var(--font-family);
+    
 }
 
 .container img{
