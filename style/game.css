@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 80%;
+    height: 500px;
+    border: 15px solid rgb(10, 150, 10);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+/* CSS relativo ao pipe e sua animação */
+
+ .pipe{
+    position: absolute;
+    bottom: 0;
+    width: 70px;
+    animation: movePipe 1.4s linear infinite;
+}
+
+@keyframes movePipe{
+    from{
+        right: -80%;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+
+/* CSS relativo ao Italian e sua animação */
+
+.italian{
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+}
+
+.jump{
+    animation: jumpItalian 500ms ease-in-out;
+}
+
+@keyframes jumpItalian{
+    0%{
+        bottom: 0;
+    }
+    40%{
+        bottom:190px;
+    }
+    50%{
+        bottom: 190px;
+    }
+    60%{
+        bottom: 190px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+/* CSS relativo às nuvens e sua animação */
+.clouds{
+    position: absolute;
+    top: 0;
+    width: 350px;
+    animation: moveClouds 20s linear infinite;
+}
+
+@keyframes moveClouds{
+    from{
+        right: -100%;
+    }
+    to{
+        right: 100%;
+    }
+}
